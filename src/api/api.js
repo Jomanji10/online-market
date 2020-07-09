@@ -5,5 +5,5 @@ const axiosInstance = axios.create({
 });
 
 export const productApi = {
-    getProducts: () => {axiosInstance.get('products')}
+    getProducts: (startIndex, count) => {axiosInstance.get('products')}
 };
