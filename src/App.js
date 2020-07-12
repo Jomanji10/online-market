@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import ProductCardContainer from './components/ProductCard/ProductCardContainer';
 import Header from './components/common/Header/Header';
-
+import { productApi } from './api/api';
 function App() {
+    productApi.getProducts('sneakers', 0, 10);
     return (
         <div>
             <Header />
