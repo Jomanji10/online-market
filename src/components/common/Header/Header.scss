@@ -1,0 +1,35 @@
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 0 4px 3px 1px rgba($color: #000000, $alpha: 0.4);
+
+    .Header__title {
+        grid-column: 3;
+        align-content: center;
+        justify-self: center;
+        display: inline-grid;
+        font-size: 30px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .Header__cart-button {
+        grid-column: 4;
+        display: inline-grid;
+        justify-self: end;
+        align-self: center;
+        width: 40px; 
+        height: 40px;
+        background-image: url('../../../resources/shopping-cart.svg');
+        border: 0;
+        background-color: rgba($color: #000000, $alpha: 0);
+    }
+
+    @media screen and (min-device-height: 200px) and (max-device-height: 1000px) {
+        .Header__cart-button {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

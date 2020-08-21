@@ -1,0 +1,32 @@
+@import "./screen-sizes";
+
+
+@mixin for-XS {
+    @media (min-width: 1px) {
+        @content;
+    }
+}
+
+@mixin for-S {
+    @media (min-width: $XS) {
+        @content;
+    }
+}
+
+@mixin for-M {
+    @media (min-width: $S) {
+        @content;
+    }
+}
+
+@mixin for-L {
+    @media (min-width: $L) {
+        @content;
+    }
+}
+
+@mixin for-XL {
+    @media (min-width: $L) {
+        @content
+    }
+}

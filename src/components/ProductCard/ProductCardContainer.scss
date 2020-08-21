@@ -1,0 +1,16 @@
+$card-border_color: #E8E8E8;
+
+.ProductCardContainer {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    border: 1px solid $card-border_color;
+    background-color: $card-border_color;
+}
+
+@media screen and (max-width: 550px) {
+    .ProductCardContainer {
+        grid-template-columns: 1fr;
+    }
+}

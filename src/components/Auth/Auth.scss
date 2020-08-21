@@ -1,0 +1,58 @@
+@import "../../scss-libs/media-mixins";
+
+
+@include for-XS {
+    .Auth > * {
+        grid-column: 3/10;
+    }
+}
+
+@include for-S {
+    .Auth > * {
+        grid-column: 5/8;;
+    }
+}
+
+@include for-M {
+    .Auth > * {
+        grid-column: 6/7;;
+    }
+}
+
+.Auth-form {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    
+    .Auth-form__email-block {
+        display: grid;
+        justify-self: stretch;
+        grid-row: 1;
+    }
+    
+    .Auth-form__password-block {
+        display: grid;
+        justify-self: stretch;
+        grid-row: 2;
+    }
+    
+    .Auth-form__submit-block {
+        display: grid;
+        justify-self: left;
+        align-self: start;
+        grid-row: 3;
+
+        .Auth-form__submit-button {
+            height: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
